@@ -1,0 +1,120 @@
+
+/*
+========================================
+	basic grid gallery structure
+========================================
+*/
+#xsellx_504x0x3 , 	/* universal defaults */ 
+#xsellx_504x0x3 * 	{ margin:0; padding:0; border:0; width:auto; height:auto; line-height:normal; 
+			  text-decoration:none; font-family:arial; 
+					-webkit-box-sizing:border-box; 
+					   -moz-box-sizing:border-box; 
+					        box-sizing:border-box; } 
+#xsellx_504x0x3 div:nth-child(1)	{ display:block !important; } /* display gallery only if css3 browser */ 
+#xsellx_504x0x3 .xsellxgallery	{ position:relative; width:auto; font-size:16px; text-align:center; padding:.5%; } 
+#xsellx_504x0x3 .xsellxheader	{ position:relative; font-weight:bold; font-size:1.2em; } 
+#xsellx_504x0x3 .xsellxviewport	{ position:relative; width:auto: height:auto; padding-bottom:5px; overflow:hidden; } 
+#xsellx_504x0x3 .xsellxitems	{ position:relative; margin:auto; text-align:center; } 
+
+/* cell */
+#xsellx_504x0x3 .xsellxrows li,
+#xsellx_504x0x3 .xsellxitems li	{ position:relative; display:none; xxfloat:left; padding:5px; list-style-type:none; width:9em; font-size:.88em;} 
+#xsellx_504x0x3 .xsellxrows li br,
+#xsellx_504x0x3 .xsellxitems li br	{ display:none; } /* ebay hub editor adds br tags */ 
+
+/* item */
+#xsellx_504x0x3 .xsellxrows a,
+#xsellx_504x0x3 .xsellxitems a	{ position:relative; display:block; width:100%; text-decoration:none; padding:5%; } 
+#xsellx_504x0x3 .xsellxitems a:hover { opacity:.8; }
+
+/* photo */
+#xsellx_504x0x3 .xsellxitems a :nth-child(1)	{ position:relative; display:block; width:100%; } 
+#xsellx_504x0x3 .xsellxitems a :nth-child(1) span, 
+#xsellx_504x0x3 .xsellxitems a :nth-child(1)::after	{ position:relative; display:block; 
+					padding-top:100%; margin:auto;  
+					background-position: center center; 
+					  background-repeat: no-repeat; 
+					-webkit-background-size:contain; 
+					   -moz-background-size:contain; 
+					     -o-background-size:contain; 
+					        background-size:contain; }
+/* title */
+#xsellx_504x0x3 .xsellxitems a :nth-child(2)	{ position:relative; display:block; font-size:.9em; line-height:1.25em; height:5em; margin-top:.5em; overflow:hidden; }
+
+/* price */
+#xsellx_504x0x3 .xsellxitems a :nth-child(3)	{ position:relative; display:block; font-size:1.2em; line-height:1.5em; font-weight:bold;  }
+#xsellx_504x0x3 .xsellxitems a :nth-child(3)::before	{ font-size:.6em; font-weight:normal; } 
+#xsellx_504x0x3 .xsellxitems a :nth-child(3) small { font-size:.8em; font-weight:normal; display:inline; } 
+
+/* spares */
+#xsellx_504x0x3 .xsellxitems a :nth-child(4)	{ display:none; } 
+#xsellx_504x0x3 .xsellxitems a :nth-child(5)	{ display:none; } 
+
+/* spacers - turn on as many rows as needed for marquee vertical spacing. No effect as-is. */ 
+#xsellx_504x0x3 .xsellxrows li:nth-child(0) 	{ visibility:hidden; display:block; clear:both; float:none; } 
+
+/*  credits */
+#xsellx_504x0x3 .xsellxfooter  { position:relative; display:block; } 
+
+#xsellx_504x0x3 .xsellxcredit { position:relative; display:block; 
+				opacity:.6; width:100%; height: 16px; background-color:transparent; 
+				background-image:url(https://xsellx.com/xsellx/icons/xsellxlogo_gallery.png); 
+					background-position: center center; 
+					  background-repeat: no-repeat; 
+					-webkit-background-size:86px 16px; 
+					   -moz-background-size:86px 16px; 
+					     -o-background-size:86px 16px; 
+					        background-size:contain; }
+
+#xsellx_504x0x3 input.xsellxmarqueestart, 
+#xsellx_504x0x3 input.xsellxmarqueestop { display:none; } 
+#xsellx_504x0x3 label.xsellxmarqueestart, 
+#xsellx_504x0x3 label.xsellxmarqueestop { display:none /*play*/; } 
+
+/* size */
+#xsellx_504x0x3 .xsellxrows li,
+#xsellx_504x0x3 .xsellxitems li { width:8.6em; font-size:.75em; } 
+
+/* shadows */
+#xsellx_504x0x3 .xsellxitems a { 
+     -webkit-box-shadow:4px 4px 4px 0px rgba(0,0,0,0.4);
+        -moz-box-shadow:4px 4px 4px 0px rgba(0,0,0,0.4);
+             box-shadow:4px 4px 4px 0px rgba(0,0,0,0.4);
+	}
+
+/* rounds */
+#xsellx_504x0x3 .xsellxitems a{ 
+     -webkit-border-radius:8px; 
+        -moz-border-radius:8px; 
+             border-radius:8px; 
+	}
+#xsellx_504x0x3 .xsellxitems a :nth-child(1)::after  { 
+     -webkit-border-radius:4px; 
+        -moz-border-radius:4px; 
+             border-radius:4px; 
+	}
+
+/* colors */
+#xsellx_504x0x3 .xsellxgallery { background-color:#3DF051; }
+#xsellx_504x0x3 .xsellxheader { color:#000000; }
+#xsellx_504x0x3 .xsellxitems a { background-color:#FFFFFF; }
+#xsellx_504x0x3 .xsellxitems a :nth-child(2), 
+#xsellx_504x0x3 .xsellxitems a :nth-child(3) { color:#000000; }
+
+/* 
+========================================
+  begin data
+  options: "xsellxnull","xsellxthumb","xsellximage","xsellxtitle","xsellxpriceprefix","xsellxprice","xsellxtime","xsellxtype" 
+========================================
+*/ 
+#xsellx_504x0x3 .xsellxitems :nth-child(0) a :nth-child(1)::after  { content:""; background-image: url(/*xsellxthumb*/); } 
+#xsellx_504x0x3 .xsellxitems :nth-child(0) a :nth-child(2)::after  { content:"/*xsellxtitle*/"; } 
+#xsellx_504x0x3 .xsellxitems :nth-child(0) a :nth-child(3)::before { content:"/*xsellxpriceprefix*/"; } 
+#xsellx_504x0x3 .xsellxitems :nth-child(0) a :nth-child(3)::after  { content:"/*xsellxprice*/"; } 
+
+
+
+/* user embedded data */
+#xsellx_504x0x3 .xsellxitems li {display:inline-block;}
+
+/* end */
